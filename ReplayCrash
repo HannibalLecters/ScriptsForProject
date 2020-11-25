@@ -1,0 +1,33 @@
+import time
+
+seconds = 0
+
+while seconds != 60:
+
+    seconds += 1
+
+    print(seconds)
+
+    time.sleep(1)
+
+    if seconds == 11:
+        with open('C:\\WG\\WoT_trunks\\win64\\Reports\\shpion.txt', 'a') as sec:
+            letter = 'Stolen your money'
+            sec.write(str(letter))
+            continue
+    
+    if seconds == 12:
+        with open('C:\\WG\\WoT_trunks\\win64\\Reports\\diplomat.txt', 'a') as secc:
+            letters = 'I have a lot of bananas'
+            secc.write(str(letters))
+            continue
+    
+    if seconds == 13:
+        with open('C:\\WG\\WoT_trunks\\win64\\Reports\\politic.txt', 'a') as seccc:
+            letteres = 'Say - Putin'
+            seccc.write(str(letteres))
+            continue
+
+print('OFF')
+
+
